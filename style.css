@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery {
+  flex: 1;
+  min-width: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.thumb {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.details {
+  flex: 1;
+  min-width: 200px;
+}
+
+.details h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.details p {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+.sizes button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+.price h3 {
+  color: green;
+  margin: 10px 0;
+}
+
+.btn-3{
+      border: 1px solid red;
+    color: red;
+    padding: 0 40px;
+}
+.button-3{
+  display: flex;
+  gap: 30px;
+}
+
+#qty {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+/* ✅ Responsive: */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
